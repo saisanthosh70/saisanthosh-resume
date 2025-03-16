@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sai Santhosh Gannapureddy's personal webpage showcasing his skills and experience as a Salesforce Developer.">
+    <meta name="keywords" content="Salesforce Developer, Sai Santhosh Gannapureddy, Salesforce, Apex, Lightning Web Components">
+    <meta property="og:title" content="Sai Santhosh G - Salesforce Developer">
+    <meta property="og:description" content="Explore the professional journey of Sai Santhosh Gannapureddy, a skilled Salesforce Developer with 3 years of experience.">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Sai Santhosh G - Salesforce Developer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            word-break: break-word; /* Prevent text overflow */
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 18px;
+        }
+        header {
+            padding-bottom: 30px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+            letter-spacing: -0.02em;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #4a4a4f; /* Darker gray for better contrast */
+            margin-bottom: 10px;
+        }
+        header a {
+            color: #1d1d1f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        header a:hover {
+            color: #007aff;
+            text-decoration: underline; /* Underline on hover */
+        }
+        section {
+            margin: 40px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        section:last-of-type {
+            border-bottom: none; /* Remove border from the last section */
+            padding-bottom: 0; /* Remove padding from the last section */
+        }
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            display: inline-block;
+            letter-spacing: -0.01em;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        li::before {
+            content: "•"; /* Small dot */
+            color: #1d1d1f;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            top: 0; /* Align the dot properly with the text */
+        }
+        .experience, .education {
+            margin-bottom: 30px;
+        }
+        .experience h3, .education h3 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        .experience p {
+            color: #4a4a4f; /* Darker gray for better contrast */
+            font-size: 1.1em;
+            margin-bottom: 20px; /* Increased spacing after project description */
+        }
+        .experience strong {
+            display: inline-block; /* Make the project title inline */
+            margin-top: 20px; /* Increased spacing before project title */
+            margin-bottom: 10px; /* Spacing after project title */
+            color: #1d1d1f; /* Dark black for project text */
+        }
+        .experience span {
+            display: inline-block; /* Make Greystar inline */
+            margin-left: 15px; /* Increased spacing between project name and Greystar */
+            color: #1d1d1f; /* Dark black for Greystar */
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .skill-tag {
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 1em;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            border: 1px solid #e0e0e0;
+        }
+        .skill-tag:hover {
+            background-color: #007aff;
+            color: #ffffff;
+            border-color: #007aff;
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+        .declaration {
+            font-style: italic;
+            color: #4a4a4f; /* Darker gray for better contrast */
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            font-size: 1.1em;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            header p {
+                font-size: 1.1em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            .experience h3, .education h3 {
+                font-size: 1.3em;
+            }
+            li {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 0.9em;
+                display: flex;
+                flex-direction: column;
+                gap: 5px; /* Stack email/phone vertically */
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            ul {
+                font-size: 0.9em;
+            }
+            .experience h3, .education h3 {
+                font-size: 1.2em;
+            }
+            .skills-container {
+                gap: 8px; /* Tighter spacing for tags */
+            }
+            .skill-tag {
+                font-size: 0.9em;
+                padding: 6px 12px;
+                margin-bottom: 8px; /* Add spacing between tags */
+            }
+        }
+        @media (max-width: 400px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            li {
+                font-size: 0.85em;
+            }
+            .skill-tag {
+                font-size: 0.8em;
+                padding: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sai Santhosh Gannapureddy</h1>
+            <p><strong>Salesforce Developer</strong></p>
+            <p>
+                <a href="mailto:saisanthosh.gannapureddy@gmail.com">📧 saisanthosh.gannapureddy@gmail.com</a> |
+                <a href="tel:+917032003773">📞 +91 70320 03773</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>Objective</h2>
+            <p>Salesforce Developer with 3 years of experience evaluating company processes, developing workflows, and adapting applications to meet business needs. Skilled in preparing technical documentation, supporting team members, and testing applications. A creative team player with strong technical and time management abilities, seeking a challenging role to leverage my expertise while fostering professional growth.</p>
+        </section>
+
+        <section>
+            <h2>Summary</h2>
+            <ul>
+                <li>3 years of experience in Salesforce development.</li>
+                <li>Proficient in Apex, Batch Apex, and Lightning Web Components.</li>
+                <li>Experienced in data migration using Data Loader.</li>
+                <li>Skilled in deploying components via Change Sets.</li>
+                <li>Expertise in developing Flows, Approval Processes, and Validation Rules.</li>
+                <li>Strong knowledge of Process Builder and security concepts (Roles, Profiles, Sharing Rules, etc.).</li>
+                <li>Proficient in customizing Page Layouts, Org-Wide Defaults, and Public Groups.</li>
+                <li>Adept at creating Tabular, Summary, and Matrix Reports and Dashboards.</li>
+                <li>Experienced in Agile methodology and writing test cases.</li>
+                <li>Knowledgeable in JavaScript, HTML, and CSS.</li>
+                <li>Implemented custom labels to enhance code quality.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Apex Programming</span>
+                <span class="skill-tag">Lightning Web Components</span>
+                <span class="skill-tag">Batch Apex</span>
+                <span class="skill-tag">SOQL</span>
+                <span class="skill-tag">Flows</span>
+                <span class="skill-tag">Process Builder</span>
+                <span class="skill-tag">Data Loader</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <div class="experience">
+                <h3>Salesforce Developer</h3>
+                <p><em>Ciora Solutions</em> | May 2021 – June 2024</p>
+                <p><strong>Project:</strong> <span>Greystar</span></p> <!-- Greystar placed beside project name -->
+                <p><em>Greystar is a global leader in rental housing, specializing in real estate sectors across multiple geographies, with a unique model to own, operate, and develop housing solutions worldwide.</em></p>
+                <ul>
+                    <li>Served as both Administrator and Developer within the organization.</li>
+                    <li>Wrote Apex classes, triggers, and batch classes to meet client business needs while adhering to Governor Limits.</li>
+                    <li>Developed and customized Lightning Web Components and Aura-enabled controllers.</li>
+                    <li>Designed modal popups in Lightning tailored to business requirements.</li>
+                    <li>Created Public Groups and assigned users with specific profiles to control record access.</li>
+                    <li>Built triggers to manage inbound email functionalities.</li>
+                    <li>Wrote and scheduled batch classes on a yearly basis.</li>
+                    <li>Resolved Salesforce configuration issues and bugs via ServiceNow tickets.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education">
+                <h3>BSc. Computer Science</h3>
+                <p><em>VGDC Vidyanagar, Hyderabad</em> | 2018 – 2021</p>
+            </div>
+            <div class="education">
+                <h3>Intermediate</h3>
+                <p><em>Narayana Junior College, Hyderabad</em> | 2016 – 2018</p>
+            </div>
+            <div class="education">
+                <h3>SSC</h3>
+                <p><em>Kakatiya High School, Huzurnagar</em> | 2016</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Personal Information</h2>
+            <ul>
+                <li><strong>Name:</strong> Sai Santhosh Gannapureddy</li>
+                <li><strong>Date of Birth:</strong> October 7, 2000</li>
+                <li><strong>Languages:</strong> English, Telugu</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Declaration</h2>
+            <p>I hereby declare that all the details provided above are accurate to the best of my knowledge and belief.</p>
+        </section>
+    </div>
+</body>
+</html>
